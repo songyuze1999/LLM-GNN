@@ -1,0 +1,28 @@
+seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  cases_index: data/raw/cases.parquet
+  dataset: RE2-TT
+
+preprocessing:
+  window_seconds: 60
+  supported_window_seconds: [30, 60, 120]
+  keep_messages: true
+  max_message_chars: 2000000
+
+llm:
+  model_name: Qwen/Qwen2.5-7B-Instruct
+  local_path: data/models/Qwen2.5-7B-Instruct
+  revision: a09a35458c702b33eeacc393d103063234e8bc28
+  pooling: mean
+  max_length: 512
+  dtype: bfloat16
+  batch_size: 4
+
+model:
+  hidden_size: 256
+  heads: 4
+  layers: 2
+  dropout: 0.2

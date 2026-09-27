@@ -1,0 +1,31 @@
+# Local datasets, downloaded model weights, and generated preprocessing data.
+data/
+
+# Generated experiment outputs and local runtime artifacts.
+results/
+*.log
+*.tmp
+*.cache
+
+# Python artifacts.
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local environments and editor files.
+.env
+.venv/
+venv/
+.conda/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS metadata.
+.DS_Store
+Thumbs.db
